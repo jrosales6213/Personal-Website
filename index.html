@@ -16,34 +16,35 @@
 <body>
 
 <!-- NAVIGATION-->
-	<nav class="navbar navbar-expand-md sticky-top text-light">
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top text-light">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><h4 class="nav-logo text-light">Rosales</h4></a>
-			<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive">
-		</button>
+			<a class="navbar-brand" href="#"><h5 class="nav-logo text-light">J. Rosales</h5></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 						<a class="nav-link text-light" href="#">HOME</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#">ABOUT ME</a>
+						<a class="nav-link text-light" href="#about-me">ABOUT ME</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#">PROJECTS</a>
+						<a class="nav-link text-light" href="#projects">PROJECTS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#">TOOLS</a>
+						<a class="nav-link text-light" href="#tools">TOOLS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-light" href="#">EDUCATION</a>
+						<a class="nav-link text-light" href="#education">EDUCATION</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 <!-- HERO -->
-  <div class="main d-flex align-items-center">
+  <div id="hero" class="main d-flex align-items-center">
     	<div class="col-md-6 mx-auto text-center">
       		<h1 class="hero-name ">Jesus Rosales</h1>
      		 <p class="hero-lead">Hello, I'm a Front End Developer</p>
@@ -54,7 +55,7 @@
 
 <!--- ABOUT ME -->
 
-<div class="aboutme p-4">
+<div id="about-me" class="aboutme p-4">
 	<div class="d-flex welcome container-fluid justify-content-center pb-1">
 		<div class="row text-center">
 			<div class="col">
@@ -70,9 +71,9 @@
 		</div>
 		<div class="col-md-6">
 				<p class="lead">
-					Hello I'm Jesus Rosales, I'm a front end developer from Riverside, Ca.
-					I've worked in Special Education for many years, and recently I\ve taken an interest in web development and web applications.
-					Since beginning to program in January 2021, I have created a few projects using HTML, CSS, Bootstrap, React, Node and Express. Currently I’m expanding my knowledge to become a Full Stack Developer.
+					Hello I'm Jesus Rosales, I'm a Front End Developer from Riverside, Ca.
+					I've worked in Special Education for many years, and recently I've taken an interest in web development and web applications.
+					Since beginning to learn web development in January 2021, I have created a few projects using HTML, CSS, Bootstrap, React, Node and Express. Currently I’m expanding my knowledge to become a Full Stack Developer.
 				</p>
 		</div>
 	</div>
@@ -81,7 +82,7 @@
 
 <!-- PROJECTS -->
 
-<div class="projects p-4">
+<div id="projects" class="projects p-4">
 <div class="d-flex welcome container-fluid justify-content-center pb-1">
 	<div class="row text-center">
 		<div class="col">
@@ -108,8 +109,8 @@
 				<div class="card-body">
 				  <h5 class="card-title">AfterShock</h5>
 				  <p class="card-text">Simple Dashboard that displays recent earthquakes. Data is fetched from USGS database. Built with HTML, CSS, Bootstrap and Javascript. </p>
-				  <a target="_blank" class="btn btn-live mr-3" href="https://jovial-bublanina-5030f4.netlify.app/">Live</a> 
-				  <a target="_blank" class="btn btn-code" href="https://github.com/jrosales6213/vehicle-recalls">Source Code</a> 
+				  <a target="_blank" class="btn btn-live mr-3" href="https://zen-mclean-fed757.netlify.app/">Live</a> 
+				  <a target="_blank" class="btn btn-code" href="https://github.com/jrosales6213/earthquaketracker">Source Code</a> 
 				</div>
 			  </div>
 		</div>
@@ -119,19 +120,18 @@
 				<div class="card-body">
 				  <h5 class="card-title">Personal Portfolio</h5>
 				  <p class="card-text">Web Site that show cases my projects and souce code from Github. Website was Built with HTML, CSS and Bootstrap.</p>
-				  <a target="_blank" class="btn btn-live mr-3" href="https://jovial-bublanina-5030f4.netlify.app/">Live</a> 
+				  <a class="btn btn-live mr-3" href="#hero">Live</a> 
 				  <a target="_blank" class="btn btn-code" href="https://github.com/jrosales6213/vehicle-recalls">Source Code</a>
 				</div>
 			  </div>
 		</div>
-	
 	</div>
 </div>
 </div>
 
 <!-- TOOLS -->
 
-<div class="tools">
+<div id="tools" class="tools">
 	<div class="d-flex welcome container-fluid justify-content-center pb-1">
 		<div class="row text-center">
 			<div class="col">
@@ -172,7 +172,7 @@
 
 <!-- EXPERIENCE -->
 
- <div class="experience">
+ <div id="education" class="experience">
 	<div class="d-flex welcome container-fluid justify-content-center ">
 		<div class="row text-center">
 			<div class="col">
@@ -211,91 +211,29 @@
 			</div>
 	     </div>
 	</div>
-
  </div>
-<!-- CONTACT FORM -->
-
-<!-- <div class="contact">
-	<div class="d-flex welcome container-fluid justify-content-center pb-1">
-		<div class="row text-center">
-			<div class="col">
-				<h1 class="text-dark">Contact</h1>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid welcome">
-		<div class="row align-items-center">
-			<div class="col-md-12 justify-content-center d-flex" >
-				<form class="row g-3" action="mailto:jrosales6213@gmail.com" method="post" enctype="text/plain">
-					<div class="col-md-6">
-						<input type="text" class="form-control" placeholder="First name" aria-label="First name">
-					</div>
-					<div class="col-md-6">
-				
-					  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-					</div>
-					<div class="col-md-6">
-						
-						<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-					  </div>
-					  <div class="col-md-12">
-						<textarea class="form-control" aria-label="With textarea" placeholder="Message"></textarea>
-					  </div>
-					<div class="col-12">
-					  <button type="submit" name="submit" value="submit" class="btn btn-message">Send Message</button>
-					</div>
-				  </form>
-
-			</div>
-		</div>		
-    </div>
-</div> -->
 
 <!--- Footer -->
+
 <footer>
-	<div class="container-fluid padding footer">
-		<div class="container p-4">
-			<!-- Section: Social media -->
-			<section class="mb-4">
-			  <!-- Facebook -->
-			  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-				><i class="fab fa-facebook-f"></i
-			  ></a>
-		
-			  <!-- Twitter -->
-			  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-				><i class="fab fa-twitter"></i
-			  ></a>
-		
-			  <!-- Google -->
-			  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-				><i class="fab fa-google"></i
-			  ></a>
-		
-			  <!-- Instagram -->
-			  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-				><i class="fab fa-instagram"></i
-			  ></a>
-		
-			  <!-- Linkedin -->
-			  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-				><i class="fab fa-linkedin-in"></i
-			  ></a>
-		
-			  <!-- Github -->
-			  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-				><i class="fab fa-github"></i
-			  ></a>
-			</section>
+	<div class="container-fluid footer">
+		<div class="col">
+			<div class="row d-flex justify-content-center">
+				<section class="mb-4">
+					<a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/jesus-rosales-548754200/" target="_blank" role="button"
+					  ><i class="fab fa-linkedin-in"></i></a>
+					<a class="btn btn-outline-light btn-floating m-1" href="https://github.com/jrosales6213" target="_blank" role="button"><i class="fab fa-github"></i></a>
+				  </section>
+			</div>
+		</div>
 		<div class="row text-center">
 				<div class="col-12">
-				<hr class="light-100" />
 				<h5>&copy; jrosales.site</h5>
 			</div>
 		</div>
+	 </div>
 	</div>
 </footer>
 <script src="index.js"></script>
 </body>
-
-</html>s
+</html>
