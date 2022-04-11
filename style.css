@@ -70,11 +70,11 @@ font-size: 4rem;
 .padding {
   padding-bottom: 2rem;
 }
-.welcome {
+/* .welcome {
   width: 75%;
   margin: 0 auto;
   padding-top: 2rem;
-}
+} */
 .projects {
   background-color: #D3E0EA;
 }
@@ -227,7 +227,19 @@ hr.light-100 {
   }
 }
 @media (max-width: 768px) {
-  .carousel-caption {
+  .hero-lead {
+    white-space: pre-wrap;
+    border-right: none;
+    animation: none;
+  }
+  .btn-live {
+    margin-bottom: 3px;
+  }
+.welcome {
+  width: fit-content;
+}
+  }
+  /* .carousel-caption {
     top: 45%;
   }
 
@@ -257,8 +269,7 @@ hr.light-100 {
 
   .myCSS3 {
     margin: 0 auto;
-  }
-}
+  } */
 @media (max-width: 576px) {
   .carousel-caption {
     top: 40%;
